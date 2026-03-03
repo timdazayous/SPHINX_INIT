@@ -74,7 +74,7 @@ Afin de garantir un environnement sain et constructif, nous demandons à tous le
 
 ## 👥 Contributeurs
 
-* **Timothée** (@timdazayous) - *Développement initial & MLOps setup*
+* **Tim** (@timdazayous) - *Développement initial & MLOps setup*
 
 ---
 
