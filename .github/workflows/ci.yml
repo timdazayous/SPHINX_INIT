@@ -1,0 +1,35 @@
+name: CI MLOps Toolbox
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main", "feat/*" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 1. Checkout du code
+      uses: actions/checkout@v4
+
+    - name: 2. Installation de uv (Gestionnaire ultra-rapide)
+      uses: astral-sh/setup-uv@v3
+      with:
+        enable-cache: true
+        cache-dependency-glob: "uv.lock"
+
+    - name: 3. Installation de Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: 4. Installation des dépendances du projet
+      run: uv sync --all-extras --dev
+
+    - name: 5. Qualité du code (Linting avec Ruff)
+      run: uv run ruff check .
+
+    - name: 6. Tests unitaires et Couverture (Pytest)
+      run: uv run pytest
