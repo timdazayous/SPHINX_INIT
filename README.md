@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 # 🧰 Toolbox MLOps - Fondation et Excellence Technique
 
 ![CI Status](https://github.com/timdazayous/SPHINX_INIT/actions/workflows/ci.yml/badge.svg)
@@ -83,4 +81,3 @@ Afin de garantir un environnement sain et constructif, nous demandons à tous le
 ## 📄 Licence
 
 Ce projet est sous licence **MIT**. Vous êtes libre de l'utiliser, de le modifier et de le distribuer. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
->>>>>>> Stashed changes
